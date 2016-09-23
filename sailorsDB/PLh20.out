@@ -1,0 +1,14 @@
+SQL> @PLh20
+Enter the rate decrement: 55
+Enter the allowed min. rate: 200
++++++ Boat: 106: old rate = 300                                                 
+---- Boat: 106: new rate: 245                                                   
++++++ Boat: 107: old rate = 350                                                 
+----- update rejected: -2290...ORA-02290: check constraint (VANSTEAL.BIC4)      
+violated                                                                        
++++++ Boat: 108: old rate = 100                                                 
+----- Update rejected. The new rate would have been 45                          
+
+PL/SQL procedure successfully completed.
+
+SQL> SPOOL OFF
